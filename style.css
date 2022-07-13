@@ -1,24 +1,582 @@
 /* 
-
-Theme Name: CRDL By Paradisiak 
-Version: 1.0
-Description: Paradisiak, Votre Agence WEB RH https://paradisiak.com/
+Theme Name: CRDL by Paradisiak
+Version: 1.0 
+Description: Cabinet de recrutement CDD & CDI
 Author: Paradisiak
-Couleur 1 (Bleu) : #141dce 
-Couleur 2 : (Bleu grey) : #afd0eb
-Couleur 3 : (Bleu footer) : #3789cb
-Couelru 4 : (Bleu Bouton) : #0c71c3
+Couleur bleue claire :  #0e18dc
+Couleur bleue bouton  : #0c71c3
+Couleur bleue 2 :#afd0eb
 
 */
 
- *{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+h4 {
+  color: #0c71c3;
+  font-weight: 550;
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+  color: #0464b4;
+}
+
+p {
+  color: #555;
+  text-align: justify;
+  font-size: 17px;
+}
+
+::selection {
+  background-color: #0e18dc;
+  color: #fff;
+}
+
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.form-control::-webkit-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #0e18dc;
+  text-decoration: underline;
+}
+
+/* header */
+
+
+.btn {
+  color: #ffffff !important;
+  border-width: 9px !important;
+  letter-spacing: 2px;
+  background-color: #0e18dc;
+  text-transform: uppercase !important;
+  display: inline-block;
+  font-weight: 600 !important;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 3px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 17px;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+@media screen and (max-width:495px) {}
+
+.btn:hover {
+  opacity: 1;
+  background-color: #0e18dc;
+  border: 3px solid #0e18dc;
+  cursor: pointer;
+  color: white;
+}
+
+.header-image {
+  background: url(assets/images/header-image2.PNG);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  max-width: 100%;
+  border-right: 10px;
+  background-image:
+    linear-gradient(90deg, #000dff 25%, rgba(0, 13, 255, 0.35) 75%),
+    url('assets/images/header-image.PNG');
+}
+
+/* .bg-light-transparent {
+  background-color: transparent;
+  padding: 2em;
+  border-radius: 14px;
+  opacity: 0.9;
+  margin-top: -180px;
+} */
+
+
+@media screen and (max-width:769px) {
+  .site-header .btn {
+    margin: 35px 0 35px 0px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: none;
+  }
+}
+
+.header-text {
+  color: #fcffff;
+  display: block;
+}
+
+.crdl-text {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 100px;
+  letter-spacing: 4px;
+  line-height: 1.8em;
+}
+
+.cabinet-text {
+  font-family: 'Raleway', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.4em;
+}
+
+.partner-text {
+  font-size: 25px;
+}
+
+@media screen and (max-width:320px) {
+  .crdl-text {
+    font-size: 4.875em;
+  }
+
+  .cabinet-text {
+    font-size: 43px;
+  }
+
+  .btn {
+    border-width: 5px !important;
+    letter-spacing: 1px;
+  }
+
+  .btn>.fa-pencil {
+    display: none;
+  }
+}
+
+.navbar-brand img{
+  max-width: 120px;
+}
+
+ @media screen and (max-width:1280px){
+  .navbar-brand img{
+    max-width: 100px;
+  }
  }
 
- body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
- }
+
+@media screen and (min-width:321px) and (max-width:360px) {
+  .cabinet-text {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .header-text {
+    text-align: center;
+  }
+}
+
+/* Formulaire recherche*/
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 2px solid #0e18dc;
+}
+
+.form-control {
+  border: 3px solid #0e18dc !important;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+}
+
+select:focus>option:checked {
+  background: #0e18dc !important;
+  color: #fff;
+}
+
+@media screen and (max-width:767px) {
+  .espace-mob-formulaire {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .Search-display{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:375px) {
+  #searchsubmit{
+    width: 400px;
+  }
+}
 
 
+/* 404 */
+
+.text-404 {
+  font-size: 150px;
+  color: #0c71c3
+}
+
+.liste-offres {
+  font-size: 20px;
+  color: #0c71c3;
+}
+
+
+/* Inside page */
+
+.accueil a {
+  color: #0c71c3;
+}
+
+.breadcrumb {
+  font-size: 19px;
+
+}
+
+.post-nombre {
+  font-weight: 500;
+  color: #0c71c3;
+}
+
+.nos-offres {
+  color: #3C3C3B;
+  margin-top: 55px;
+  margin-bottom: 76px;
+}
+
+@media screen and (max-width:375px) {
+  .breadcrumb{
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .nos-offres {
+    text-align: center;
+  }
+
+}
+
+/* Affichage poste */
+
+.titre-post {
+  font-size: 23px;
+  color: #0c71c3;
+}
+
+p.intuitionapply {
+  display: none;
+}
+
+.text-desc-offre {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.see-post {
+  position: absolute;
+  right: 5rem;
+  bottom: -1.2em;
+  color: black;
+  background-color: #0e18dc;
+  border-width: 3px !important;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+@media screen and (max-width:768px) {
+  .see-post{
+    color: #ffffff !important;
+    letter-spacing: 1px;
+    background-color: #0e18dc;
+    text-transform: none !important;
+
+  }
+}
+
+.block-offre {
+  padding: 0.5em;
+  max-height: 230px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 1em;
+  border-right: 3px solid #0c71c3;
+}
+
+.date-offre,
+.local-offre,
+.type-offre {
+  color: rgb(34, 34, 34);
+  font-size: 17px;
+  font-weight: 530;
+}
+
+
+.font-italic {
+  font-style: italic;
+  font-size: 12px;
+  text-transform: none;
+}
+
+/* Pagination */
+
+.page-item.active .page-link {
+
+  background-color: #0c71c3;
+  border-color: #0c71c3;
+}
+
+.page-link {
+  color: #0c71c3;
+  border: 1px solid #0c71c3;
+}
+
+.page-link:hover {
+  color: #f7f7f7;
+  border: 1px solid #0c71c3;
+  text-decoration: none;
+}
+
+.page-link:focus,
+.page-link:active {
+  outline: none !important;
+  box-shadow: none !important;
+  color: #fcffff;
+}
+
+
+/* Single page */
+
+
+.bloc-heigh-single {
+  margin-top: -200px;
+}
+
+.single-image {
+  background-image: url(assets/images/bandeau1.PNG);
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  -webkit-transition-duration: .2s;
+  height: 410px;
+  min-width: 100%;
+}
+
+.show-poste {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 3px 5px #0e18dc;
+  box-shadow: #000;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 50%;
+  padding: 20px;
+}
+
+@media screen and (max-width:768px) {
+  .show-poste{
+    max-width: 97%;
+    opacity: 0.9;
+  }
+}
+
+
+.titre-single {
+  font-size: 35px;
+  color: black;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 37px;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:768px) {
+  .titre-single{
+    font-size:25px;
+    color:#0c71c3 ;
+  }
+}
+
+.back-offre-text {
+  font-size: 20px;
+}
+
+.breadcrumb-item.active {
+  color: #0c71c3;
+}
+
+
+#single-page p {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+#single-page h4 {
+  margin-bottom: 25px;
+  margin-top: 35px;
+}
+
+#single-page h3 {
+  margin-bottom: 25px;
+  color: #0e18dc;
+}
+
+.intuitiondescription {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.post-desc-right {
+  max-height: 300px;
+}
+
+@media screen and (max-width:991px) {
+  .post-desc-right {
+    margin-top: 4rem;
+  }
+}
+
+/* 
+Recherche non trouvée 
+*/
+
+.aucun-poste {
+  font-size: 19px;
+}
+
+.revenir-liste {
+  color: #0e18dc;
+  font: inherit;
+  font-size: large;
+}
+
+.post-non-trouve {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+/* footer */
+
+
+footer {
+  margin-top: 50px;
+
+}
+
+.fa-linkedin:hover {
+  font-size: 17px;
+}
+
+.post-non-trouve .fa-search-minus {
+  font-size: 50px;
+  color: #0e18dc;
+  opacity: 0.7;
+}
+
+
+@media screen and (max-width:767px) {
+  footer p {
+    text-align: center;
+  }
+}
+
+/* Intégration des données cookies & RGPD */
+
+#wrapper a {
+  text-decoration: underline;
+}
+#wrapper a:hover{
+  text-decoration: none;
+  transition: 1s;
+}
+
+#wrapper .btn-close{
+  color: rgb(252, 251, 251);
+}
+
+.cookie-text{
+  line-height: 2;
+  color: white;
+  font-size: 20px;
+}
+ 
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 20px rgba(47, 54, 64, 0.39);
+  z-index: 9999;
+  transition: all 2s;
+}
+ 
+.cookie-container.active {
+  bottom: 0;
+}
+ 
+.cookie-container a {
+  color: #f5f6fa;
+}
+ 
+.cookie-btn, .cookie-cancel {
+  background-color:#e0222c;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align:center
+}
