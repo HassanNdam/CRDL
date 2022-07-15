@@ -44,7 +44,7 @@
         Nos données sont traitées conformément au Réglement Général de la Protection des Données (RGPD).
       </p>
       <button class="cookie-btn mt-4" title="Nous respectons votre vie privée et les règles RGPD"><i class="fa fa-check" aria-hidden="true"></i> Accepter et fermer</button>
-      <button type="button" class="btn-close bg-light" data-bs-dismiss="alert" aria-label="Close"></button>
+      <button type="button" class="btn-close bg-danger" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 </div>
 

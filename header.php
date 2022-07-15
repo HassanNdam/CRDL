@@ -19,7 +19,7 @@ wp_head();
 
 <header class="site-header shadow-sm ">
     <nav class="navbar navbar-default navbar-expand d-flex container flex-column flex-md-row justify-content-between py-2">
-        <a class="navbar-brand" title="Aller sur la page d'accueil" href="<?php echo get_site_url(); ?>" >
+        <a class="navbar-brand" title="Aller sur https://www.crdl.fr/" href="https://www.crdl.fr/" target="_blank">
             <img src="<?php echo get_template_directory_uri(). '/assets/logo/logo.jpeg'?>" alt="Logo CRDL" class="img-fluid" title="Cliquer pour revenir sur la page d'accueil du site"> 
         </a>
     <div class="d-flex">
