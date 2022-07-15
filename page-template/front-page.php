@@ -71,7 +71,6 @@ $wp_query = $myquery;
    </div>
 </div>
 
-
 <!-- Formulaire de recherche -->
     
  <div class="container position-relative  text-center p-5"> <!--bg-light-transparent -->

@@ -246,6 +246,7 @@ select:focus>option:checked {
 }
 
 
+
 /* 404 */
 
 .text-404 {
@@ -498,10 +499,25 @@ Recherche non trouvée
   font-size: large;
 }
 
+
+
 .post-non-trouve {
   padding-top: 100px;
   padding-bottom: 120px;
 }
+
+.post-non-trouve .fa-search-minus {
+  font-size: 50px;
+  color: #0e18dc;
+  opacity: 0.7;
+}
+
+@media screen and (max-width:422px) {
+  .post-non-trouve .btn{
+    font-size: 11px;
+  }
+}
+
 
 /* footer */
 
@@ -513,12 +529,6 @@ footer {
 
 .fa-linkedin:hover {
   font-size: 17px;
-}
-
-.post-non-trouve .fa-search-minus {
-  font-size: 50px;
-  color: #0e18dc;
-  opacity: 0.7;
 }
 
 
