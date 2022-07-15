@@ -569,7 +569,7 @@ footer {
   color: #f5f6fa;
 }
  
-.cookie-btn, .cookie-cancel {
+.cookie-btn {
   background-color:#e0222c;
   border: 0;
   color: #f5f6fa;
@@ -579,4 +579,9 @@ footer {
   border-radius: 8px;
   cursor: pointer;
   text-align:center
+}
+
+.cookie-btn:hover{
+  background-color: #000;
+  transition: all ease-in 0.3s;
 }
