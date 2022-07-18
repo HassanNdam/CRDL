@@ -400,7 +400,6 @@ p.intuitionapply {
   overflow: hidden !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  -webkit-transition-duration: .2s;
   height: 410px;
   min-width: 100%;
 }
