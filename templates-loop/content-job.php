@@ -65,7 +65,7 @@ $postlink = get_post_custom_values('job_link')[0];
 <div id="single-page">
     <div class="container mt-5">
         <div class="row justify-content-center">
-                <div class="col-lg-9 pt-1 p-5 border shadow-sm mb-5 text center">
+                <div class="col-lg-9 p-5 border shadow-sm mb-5 text center">
                     <?php the_content();?>
                 </div>
         </div>
