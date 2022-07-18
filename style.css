@@ -21,7 +21,7 @@ body {
   margin: 0;
   background-color: #fff;
   color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 h4 {
@@ -100,7 +100,6 @@ a:hover {
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
-@media screen and (max-width:495px) {}
 
 .btn:hover {
   opacity: 1;
@@ -111,7 +110,7 @@ a:hover {
 }
 
 .header-image {
-  background: url(assets/images/header-image2.PNG);
+  background: url(assets/images/header-image2.png);
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -119,7 +118,7 @@ a:hover {
   border-right: 10px;
   background-image:
     linear-gradient(90deg, #000dff 25%, rgba(0, 13, 255, 0.35) 75%),
-    url('assets/images/header-image.PNG');
+    url('assets/images/header-image.png');
 }
 
 /* .bg-light-transparent {
@@ -189,7 +188,7 @@ a:hover {
 
  @media screen and (max-width:1280px){
   .navbar-brand img{
-    max-width: 100px;
+    max-width: 80px;
   }
  }
 
@@ -244,6 +243,7 @@ select:focus>option:checked {
     width: 400px;
   }
 }
+
 
 
 /* 404 */
@@ -394,13 +394,12 @@ p.intuitionapply {
 }
 
 .single-image {
-  background-image: url(assets/images/bandeau1.PNG);
+  background: url(assets/images/bandeau1.png);
   position: relative !important;
   background-size: cover !important;
   overflow: hidden !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  -webkit-transition-duration: .2s;
   height: 410px;
   min-width: 100%;
 }
@@ -498,10 +497,25 @@ Recherche non trouvée
   font-size: large;
 }
 
+
+
 .post-non-trouve {
   padding-top: 100px;
   padding-bottom: 120px;
 }
+
+.post-non-trouve .fa-search-minus {
+  font-size: 50px;
+  color: #0e18dc;
+  opacity: 0.7;
+}
+
+@media screen and (max-width:422px) {
+  .post-non-trouve .btn{
+    font-size: 11px;
+  }
+}
+
 
 /* footer */
 
@@ -513,12 +527,6 @@ footer {
 
 .fa-linkedin:hover {
   font-size: 17px;
-}
-
-.post-non-trouve .fa-search-minus {
-  font-size: 50px;
-  color: #0e18dc;
-  opacity: 0.7;
 }
 
 
