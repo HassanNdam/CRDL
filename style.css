@@ -315,7 +315,7 @@ p.intuitionapply {
   bottom: -1.2em;
   color: black;
   background-color: #0e18dc;
-  border-width: 3px !important;
+  /* border-width: 3px !important; */
   letter-spacing: 2px;
   opacity: 0.9;
 }
