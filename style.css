@@ -296,6 +296,7 @@ select:focus>option:checked {
 /* Affichage poste */
 
 .titre-post {
+  margin-top: 10px;
   font-size: 23px;
   color: #0c71c3;
 }
