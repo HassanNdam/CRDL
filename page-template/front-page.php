@@ -145,8 +145,15 @@ $wp_query = $myquery;
                                     <h4 class="titre-post"> <?php echo the_title_attribute();?></h4>	               
                             </div>
                                 <div class="row">
-                                        <h4 class="local-offre mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $postlocation; ?></h4>
-                                        <h4 class="type-offre mt-3 mb-4"><i class="fa fa-briefcase" aria-hidden="true"></i>  <?php echo $postcontract?></h4>
+                                    <?php if ($postlocation == ""):?>
+
+                                    <?php else : ?>
+
+                                    <h4 class="local-offre mt-3"><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $postlocation; ?></h4>
+
+                                    <?php endif;?>
+
+                                    <h4 class="type-offre mt-3 mb-4"><i class="fa fa-briefcase" aria-hidden="true"></i>  <?php echo $postcontract?></h4>
                                 </div>
                             </div>                  
                             <div class="col-12 text-center">
