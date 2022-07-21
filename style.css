@@ -333,7 +333,7 @@ p.intuitionapply {
 
 .block-offre {
   padding: 0.5em;
-  max-height: 230px;
+  height: 215px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -342,6 +342,13 @@ p.intuitionapply {
   border: 1px solid rgba(0, 0, 0, .125);
   border-radius: 1em;
   border-right: 3px solid #0c71c3;
+  transition: 0.2s all;
+
+}
+
+.block-offre:hover{
+  box-shadow: 0 5px 7px #30303029;
+  transition: 0.2s all;
 }
 
 .date-offre,
