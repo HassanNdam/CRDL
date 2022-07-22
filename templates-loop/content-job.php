@@ -33,12 +33,14 @@ $postlink = get_post_custom_values('job_link')[0];
                     <span class="text-muted mt-3"><?php echo 'Publiée le ' . get_the_date(); ?></span>
                 </div>
             </div>
+            <?php if ($postlocation == ""): else : ?>
             <div class="col">
                 <div class="row">
                     <i class="fa fa-globe" aria-hidden="true"></i> 
                     <span class="text-muted mt-3"><?php echo $postlocation ?></span>
                 </div>
             </div>
+            <?php endif; ?>
             <div class="col">
                 <div class="row">
                     <i class="fa fa-pencil" aria-hidden="true"></i> 
