@@ -190,7 +190,7 @@ $wp_query = $myquery;
                         </div>
                         <div class="col-lg-4 text-center">
                         <h3 class="aucun-poste mt-3 mb-3">Soumettre une candidature spontanée :</h3>
-                            <a  class="mt-5" href="https://jobaffinity.fr/apply/h1luaspclin9a0748n" target="_blank" title="Soumettre une candidature spontanée">
+                            <a  class="mt-5" href="https://jobaffinity.fr/apply/ihjqj1vyqk2rd22mmq" target="_blank" title="Soumettre une candidature spontanée">
                                 <button type="button" class="btn btn-primary" onclick="this.blur();"><i class="fa fa-pencil" aria-hidden="true"></i> Candidature spontanée</button>
                             </a>
                         </div>

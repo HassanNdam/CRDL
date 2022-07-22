@@ -23,7 +23,7 @@ wp_head();
             <img src="<?php echo get_template_directory_uri(). '/assets/logo/logo.jpeg'?>" alt="Logo CRDL" class="img-fluid" title="Cliquer pour revenir sur la page d'accueil du site"> 
         </a>
     <div class="d-flex">
-        <a href="https://jobaffinity.fr/apply/h1luaspclin9a0748n" target="_blank">
+        <a href="https://jobaffinity.fr/apply/ihjqj1vyqk2rd22mmq" target="_blank">
             <button type="button" class="btn btn-primary" onclick="this.blur();" title="Postulez pour une candidature spontanée"> <i class="fa fa-pencil" aria-hidden="true"></i> Candidature spontanée</button>
         </a>
     </div>
